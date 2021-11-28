@@ -107,15 +107,14 @@ nav ul {
 }
 
 .header-auth ul li{
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
-/* .header-auth ul li a, */
 .header-auth ul li a { 
   text-decoration: none;
   display: inline-block;
   background-color: var(--dark-green);
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 20px;
   font-size: 14px;
   color: var(--nyanza);
@@ -127,6 +126,27 @@ nav ul {
   color: var(--dark-green);
   border: 1px solid var(--dark-green);
   transition: 0.3s ease-in-out;
+}
+
+.cart-container {
+  margin: 0 10px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#cart {
+  color: var(--dark-green);
+  background-color: var(--green);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#cart:hover {
+  background-color: var(--viridian-green);
+  color: var(--extra-light-green);
 }
 
 /* 
