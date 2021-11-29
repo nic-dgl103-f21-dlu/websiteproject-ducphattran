@@ -48,7 +48,7 @@
   text-align: right;
 }
 
-.promotion-content p span{
+.promotion-content p span {
   background-color: var(--raspberry);
   padding: 0 8px;
   margin: 5px;
@@ -81,7 +81,7 @@
 */
 .category {
   margin-top: 20px;
-  padding: 20px; 
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +96,7 @@
   padding-bottom: 10px;
 }
 
-.category ul{
+.category ul {
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -128,7 +128,7 @@
 }
 
 .category-item p {
-  margin: 10px 0 0 0 ;
+  margin: 10px 0 0 0;
   padding: 15px 10px;
   text-align: center;
   font-weight: bold;
@@ -165,7 +165,7 @@
 .product-item {
   flex-grow: 1;
   position: relative;
-  background-color: #BDDBD0;
+  background-color: #bddbd0;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -215,7 +215,7 @@
   padding: 10px;
 }
 
-.product-content p{
+.product-content p {
   text-align: center;
   color: var(--dark-green);
   font-weight: bold;
@@ -231,7 +231,7 @@
   bottom: -30px;
   padding: 15px;
   background-color: var(--viridian-green);
-  color: var(--extra-light-green)
+  color: var(--extra-light-green);
 }
 
 .add-product-btn i {
@@ -310,7 +310,7 @@
 .testimonial-name {
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .testimonial-job {
@@ -319,7 +319,7 @@
 
 .testimonial-item p {
   font-size: 16px;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
   line-height: 28px;
   word-wrap: break-word;
   text-align: justify;
@@ -400,3 +400,52 @@
   === RESPONSIVE ===
 */
 
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .article-item h2 {
+    font-size: 15px;
+  }
+
+  .article-item p {
+    font-size: 12px;
+  }
+
+  .testimonial-item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .testimonial-content {
+    flex-wrap: wrap;
+  }
+
+  .product ul {
+    flex-wrap: wrap;
+    gap: 100px 50px;
+  }
+
+  .product-item {
+    width: 30%;
+  }
+
+  .testimonial-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-info {
+    margin: 20px;
+  }
+
+  .testimonial-name{
+    font-size: 14px;
+  }
+
+  .article-list ul {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+}
