@@ -393,7 +393,7 @@
   margin: 0;
   font-size: 13px;
   text-align: justify;
-  color: var(--violet);
+  color: black;
 }
 
 /* 
@@ -414,10 +414,25 @@
     font-size: 12px;
     line-height: 18px;
   }
+  .article-list{
+    margin: 10px;
+  }
+
+  .article-list ul {
+    padding: 10px;
+    gap: 25px;
+  }
+
+  .article-item a{
+    width: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
   .testimonial-content {
     flex-wrap: wrap;
   }

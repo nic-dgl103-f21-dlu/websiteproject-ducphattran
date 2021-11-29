@@ -12,20 +12,20 @@
  === Global Styles ===
 */
 :root {
-  --background: #F2FAF8;
-  --green: #04E762;
+  --background: #f2faf8;
+  --green: #04e762;
   --dark-green: #134611;
-  --light-green: #96E072;
+  --light-green: #96e072;
   --extra-light-green: #d9f4e0;
-  --viridian-green: #558B6E;
-  --nyanza: #E8FCCF;
-  --raspberry: #BA3B46;
+  --viridian-green: #558b6e;
+  --nyanza: #e8fccf;
+  --raspberry: #ba3b46;
   --violet: #573280;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -52,7 +52,7 @@ header {
   padding: 10px;
 }
 
-.logo a img{
+.logo a img {
   width: 150px;
   height: 90px;
 }
@@ -95,6 +95,11 @@ nav ul {
   border-bottom: 5px solid var(--green);
 }
 
+.menu-label,
+.toggle {
+  display: none;
+}
+
 /* 
  === HEADER AUTH ===
  */
@@ -106,11 +111,11 @@ nav ul {
   align-items: center;
 }
 
-.header-auth ul li{
+.header-auth ul li {
   margin-left: 10px;
 }
 
-.header-auth ul li a { 
+.header-auth ul li a {
   text-decoration: none;
   display: inline-block;
   background-color: var(--dark-green);
@@ -119,9 +124,9 @@ nav ul {
   font-size: 14px;
   color: var(--nyanza);
   border: 1px solid var(--dark-green);
-} 
+}
 
-.header-auth ul li a:hover { 
+.header-auth ul li a:hover {
   background-color: var(--nyanza);
   color: var(--dark-green);
   border: 1px solid var(--dark-green);
@@ -161,7 +166,7 @@ main {
   === FOOTER ===
 */
 footer {
-  background-color: #558B6E;
+  background-color: #558b6e;
 }
 
 .footer-content {
@@ -173,7 +178,7 @@ footer {
 }
 
 .navigation,
-.contact ,
+.contact,
 .facebook-page {
   width: 33.33%;
   padding: 20px;
@@ -181,22 +186,22 @@ footer {
 
 .navigation h2,
 .contact h2,
-.facebook-page h2{
-  color: #76E7CD;
+.facebook-page h2 {
+  color: #76e7cd;
   padding-bottom: 5px;
 }
 
-.navigation ul{
+.navigation ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.navigation ul li{
+.navigation ul li {
   width: 40%;
 }
 
-.navigation ul li a{
+.navigation ul li a {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -207,12 +212,12 @@ footer {
   margin: 15px;
 }
 
-.contact ul li p{
+.contact ul li p {
   color: var(--extra-light-green);
   /* display: inline-block; */
 }
 
-.contact ul li p:first-child{
+.contact ul li p:first-child {
   color: var(--nyanza);
   margin: 0 20px 0 0;
   font-weight: bold;
@@ -227,7 +232,7 @@ footer {
   margin-right: 5px;
 }
 
-.disclaimer{
+.disclaimer {
   margin: 0;
   padding: 15px;
   text-align: center;
@@ -242,7 +247,9 @@ footer {
 */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  header, nav, .promotion {
+  header,
+  nav,
+  .promotion {
     width: 85%;
     margin: auto;
   }
@@ -260,7 +267,9 @@ footer {
     padding: 10px;
   }
 
-  .navigation h2, .contact h2, .facebook-page h2 {
+  .navigation h2,
+  .contact h2,
+  .facebook-page h2 {
     font-size: 15px;
   }
 
@@ -277,7 +286,6 @@ footer {
     font-size: 12px;
   }
 }
-
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -305,7 +313,9 @@ footer {
     padding: 5px;
   }
 
-  .navigation h2, .contact h2, .facebook-page h2 {
+  .navigation h2,
+  .contact h2,
+  .facebook-page h2 {
     font-size: 13px;
   }
 
