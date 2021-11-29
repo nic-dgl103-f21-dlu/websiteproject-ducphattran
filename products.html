@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- DGL103/DLU1l - Duc Phat Tran - Website project -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outback Nursery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Outback Nursery's logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="menu-item">
+            <a class="menu-link" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link active" href="products.html">Products</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="articles.html">Articles</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-auth">
+        <ul>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cart-container">
+        <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="products-container">
+        <h1>Products</h1>
+        <div class="products-content">
+          <aside>
+            <h2>Search</h2>
+            <!-- Search form -->
+            <form action="products.html" method="get">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-text"
+                  name="search-text"
+                  placeholder="What are you looking for?"
+                />
+                <input type="submit" value="Search" />
+              </div>
+            </form>
+            <!-- Filter form -->
+            <form action="products.html" method="get">
+              <div class="category-filter">
+                <h2>Category</h2>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="cate-conifer" id="cate-conifer" />
+                    <label for="cate-conifer">Conifers</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="cate-japanese-maple" id="cate-japanese-maple" />
+                    <label for="cate-japanese-maple">Japanese Maple</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="cate-fruit-trees" id="cate-fruit-trees" />
+                    <label for="cate-fruit-trees">Fruit Trees</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="cate-ornamental-trees"
+                      id="cate-ornamental-trees"
+                    />
+                    <label for="cate-ornamental-trees">Ornamental Trees</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="type-filter">
+                <h2>Type</h2>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="type-tree" id="type-tree" />
+                    <label for="type-tree">Tree</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="type-shrub" id="type-shrub" />
+                    <label for="type-shrub">Shrub</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-buttons">
+                <input type="reset" value="Clear all filters" />
+                <input type="submit" value="Apply" />
+              </div>
+            </form>
+          </aside>
+
+          <!-- Product -->
+          <section>
+            <ul class="product-list">
+              <li class="product-item">
+                <span class="tree">Tree</span>
+                <a href="#">
+                  <img src="images/product-arbutus.jpg" alt="Arbutus" />
+                  <div class="product-content">
+                    <p>Arbutus</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+              <li class="product-item">
+                <span class="tree">Tree</span>
+                <a href="#">
+                  <img src="images/product-arbutus.jpg" alt="Arbutus" />
+                  <div class="product-content">
+                    <p>Arbutus</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+              <li class="product-item">
+                <span class="tree">Tree</span>
+                <a href="#">
+                  <img src="images/product-arbutus.jpg" alt="Arbutus" />
+                  <div class="product-content">
+                    <p>Arbutus</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+              <li class="product-item">
+                <span class="shrub">Shrub</span>
+                <a href="#">
+                  <img src="images/product-Honeysuckle.jpg" alt="Honeysuckle" />
+                  <div class="product-content">
+                    <p>Honeysuckle</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+              <li class="product-item">
+                <span class="tree">Tree</span>
+                <a href="#">
+                  <img src="images/product-raspberry.jpg" alt="Raspberry" />
+                  <div class="product-content">
+                    <p>Raspberry</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+              <li class="product-item">
+                <span class="shrub">Shrub</span>
+                <a href="#">
+                  <img src="images/product-Jedeloloh.jpg" alt="Jedeloloh Orange" />
+                  <div class="product-content">
+                    <p>Jedeloloh Orange</p>
+                  </div>
+                </a>
+                <a class="add-product-btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+              </li>
+            </ul>
+
+            <div class="pagination">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-chevron-left"></i></a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><span>...</span></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li>
+                  <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="navigation">
+          <h2>Navigation</h2>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="contact-us.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#">Signup</a>
+            </li>
+            <li>
+              <a href="#">Forgot password</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <p><i class="fas fa-phone-volume"></i>Phone:</p>
+              <p>250-703-0723 (Michelle)</p>
+              <p>250-702-4715</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope"></i>Email:</p>
+              <p>info@outbacknursery.ca</p>
+            </li>
+            <li>
+              <p><i class="fas fa-map-marked-alt"></i>Address:</p>
+              <p>6016 Headquarters Rd Courtenay, British Columbia V9J 1M7, Canada</p>
+            </li>
+          </ul>
+        </div>
+        <div class="facebook-page">
+          <h2>Follow us</h2>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOutback-Nursery-Garden-Centre-819687898044596&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=596442508391523"
+            width="340"
+            height="300"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+      <p class="disclaimer">
+        This is a fictional website that was designed and coded as an educational exercise. It is
+        not intended to be seen outside of the class environment. None of the content and images
+        were approved by the business owner.
+      </p>
+    </footer>
+  </body>
+</html>

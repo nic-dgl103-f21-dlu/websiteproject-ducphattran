@@ -1,0 +1,111 @@
+.products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.products-container h1 {
+  font-size: 25px;
+  margin: 0;
+  color: var(--dark-green);
+  border-bottom: 5px solid var(--light-green);
+  padding-bottom: 10px;
+}
+
+.products-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+}
+
+aside {
+  width: 30%;
+  margin: 0 30px;
+  padding: 20px;
+  border: 2px solid var(--dark-green);
+  border-radius: 10px;
+}
+
+aside h2 {
+  padding-bottom: 5px;
+  border-bottom: 5px solid var(--dark-green);
+}
+
+.search-box {
+  position: relative;
+}
+
+#search-text {
+  padding: 8px;
+  width: 100%;
+}
+
+.search-box input[type="submit"] {
+  position: absolute;
+  padding: 8px;
+  background-color: var(--raspberry);
+  color: var(--extra-light-green);
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.category-filter ul li,
+.type-filter ul li {
+  padding: 5px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.filter-buttons input[type="reset"] {
+  background-color: #505551;
+  color: white;
+  border: none;
+}
+
+.filter-buttons input[type="submit"] {
+  padding: 10px 15px;
+  background-color: var(--light-green);
+  border: none;
+}
+
+.filter-buttons input[type="reset"]:hover,
+.filter-buttons input[type="submit"]:hover {
+  background-color: var(--raspberry);
+  cursor: pointer;
+  color: white;
+}
+
+section {
+  width: 70%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+section .product-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px 80px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 25%;
+}
