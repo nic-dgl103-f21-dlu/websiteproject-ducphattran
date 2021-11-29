@@ -207,17 +207,20 @@ footer {
   margin: 15px;
 }
 
+.contact ul li p{
+  color: var(--extra-light-green);
+  /* display: inline-block; */
+}
+
 .contact ul li p:first-child{
   color: var(--nyanza);
   margin: 0 20px 0 0;
   font-weight: bold;
   font-style: italic;
-  display: inline-block;
 }
 
-.contact ul li p:last-child{
-  color: var(--extra-light-green);
-  display: inline-block;
+.contact ul li p:not(p:first-child) {
+  padding-left: 15px;
 }
 
 .contact ul li p i {
