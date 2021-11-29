@@ -4,9 +4,10 @@ article {
 
 .introduction,
 .seasonal,
-.product-serivce {
+.product-service {
   margin: 20px;
   padding: 30px;
+  text-align: center;
 }
 
 /* 
@@ -39,7 +40,7 @@ article {
 /* Introduction */
 .introduction h2,
 .seasonal h2,
-.product-serivce h2 {
+.product-service h2 {
   background-color: var(--green);
   display: inline-block;
   padding: 20px ;
@@ -49,7 +50,7 @@ article {
 
 .introduction-content,
 .seasonal-content,
-.product-serivce-content {
+.product-service-content {
   display: flex;
   flex-direction: row;
   padding: 10px 20px;
@@ -58,7 +59,7 @@ article {
 }
 
 .introduction-content,
-.product-serivce-content {
+.product-service-content {
   border-right: 10px solid var(--dark-green);
 }
 
@@ -67,7 +68,7 @@ article {
 }
 
 .introduction-content img,
-.product-serivce-content img {
+.product-service-content img {
   width: 45%;
   object-fit: cover;
   border-radius: 10px;
@@ -76,7 +77,7 @@ article {
 
 .introduction-content p,
 .seasonal-content p,
-.product-serivce-content p {
+.product-service-content p {
   padding: 20px;
   margin: 0;
   font-size: 17px;
