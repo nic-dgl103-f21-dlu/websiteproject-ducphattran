@@ -1,0 +1,118 @@
+.contact-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container h1 {
+  padding: 20px 0px;
+  border-bottom: 5px solid var(--light-green);
+}
+
+.working-info,
+.contact-info {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.working-info div {
+  flex-grow: 1;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: var(--extra-light-green);
+  margin: auto;
+  text-align: center;
+}
+
+.working-info div h2 {
+  padding: 10px;
+  text-align: center;
+  color: var(--raspberry);
+}
+
+.working-info div p {
+  margin: 15px;
+}
+
+main i,
+.working-info div p span {
+  margin-right: 10px;
+}
+
+.google-map{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+  background-color: var(--extra-light-green);
+}
+
+.google-map h2 {
+  color: var(--dark-green);
+  padding: 0 10px;
+}
+
+.google-map iframe {
+  width: 95%;
+  margin: auto;
+}
+
+.message-form {
+  flex-grow: 2;
+  padding: 20px;
+  margin: 10px;
+}
+
+.message-form p {
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.form-group {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+.form-group input:not(input[type="submit"]) {
+  padding: 10px;
+  height: 50px;
+  border: none;
+  border-left: 5px solid var(--viridian-green);
+}
+
+.form-group textarea {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--viridian-green);
+}
+
+.form-group input[type="submit"] {
+  padding: 20px;
+  background-color: var(--dark-green);
+  color: var(--extra-light-green);
+  border: none;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: var(--green);
+  color: var(--dark-green);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
