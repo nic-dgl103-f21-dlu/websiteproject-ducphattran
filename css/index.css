@@ -4,6 +4,7 @@
   3. Product
   4. Testimonial
   5. Article
+  6. Responsive
 */
 
 /* 
@@ -263,7 +264,7 @@
   border-bottom: 5px solid var(--green);
 }
 
-.testimonial > p {
+.testimonial h2 {
   font-size: 30px;
   margin: 10px;
   color: var(--nyanza);
@@ -401,38 +402,113 @@
 */
 
 /* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .promotion {
+    height: 500px;
+  }
+
+  .promotion-content p {
+    font-size: 30px;
+  }
+
+  #shop-now-btn {
+    font-size: 15px;
+  }
+
+  .product-item {
+    padding: 25px 15px 15px 20px;
+  }
+
+  .product-content {
+    height: 50%;
+    padding: 0;
+  }
+
+  .product-content p {
+    font-size: 13px;
+  }
+
+  .product-item a {
+    font-size: 12px;
+    padding: 10px;
+    bottom: -22px;
+  }
+
+  .testimonial-item p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .testimonial-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-info {
+    margin: 20px 0 0 20px;
+  }
+
+  .testimonial-name {
+    font-size: 15px;
+  }
+
+  .testimonial-job {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .article-list {
+    margin: 10px;
+  }
+
+  .article-list ul {
+    padding: 10px
+  }
+
+  .article-item a{
+    height: 400px;
+  }
+
   .article-item h2 {
     font-size: 15px;
   }
 
   .article-item p {
-    font-size: 12px;
-  }
-
-  .testimonial-item p {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .article-list{
-    margin: 10px;
-  }
-
-  .article-list ul {
-    padding: 10px;
-    gap: 25px;
-  }
-
-  .article-item a{
-    width: 100%;
+    font-size: 13px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 15px;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .promotion {
+    height: 350px;
   }
+
+  .promotion-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #shop-now-btn {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+  
+  .category h1,
+  .product h1,
+  .article h1  {
+    font-size: 18px;
+    border-bottom: 3px solid var(--light-green);
+  }
+  
+  .category-item p {
+    font-size: 14px;
+  }
+
+  .category ul {
+    padding: 0;
+  }
+
   .testimonial-content {
     flex-wrap: wrap;
   }
@@ -446,21 +522,197 @@
     width: 30%;
   }
 
+  .product-content {
+    height: 50%;
+  }
+  
+  .product-content p {
+    font-size: 13px;
+  }
+
+  .product-item a {
+    font-size: 12px;
+    padding: 10px;
+    bottom: -22px;
+  }
+
+  .testimonial-content {
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .testimonial-item {
+    width: 70%;
+  }
+
   .testimonial-avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .testimonial-info {
-    margin: 20px;
+    margin: 10px;
   }
 
   .testimonial-name{
     font-size: 14px;
   }
 
+  .testimonial-job {
+    font-size: 12px;
+  }
+
+  .testimonial-item p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .article-list {
+    margin: 0;
+  }
+
   .article-list ul {
     flex-direction: column;
-    gap: 50px 0;
+    gap: 40px 0;
   }
+
+  .article-item a {
+    width: 70%;
+    height: 350px;
+  }
+  
+  .article-item h2 {
+    font-size: 14px;
+  }
+
+  .article-item p {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .promotion {
+    height: 350px;
+  }
+
+  .promotion-content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #shop-now-btn {
+    font-size: 7px;
+    padding: 6px 10px;
+  }
+
+  .category h1,
+  .product h1,
+  .article h1  {
+    font-size: 15px;
+    border-bottom: 2px solid var(--light-green);
+  }
+
+  .category ul {
+    padding: 0;
+  }
+
+  .category-item p {
+    font-size: 10px;
+  }
+  
+   .testimonial-content {
+    flex-wrap: wrap;
+  }
+
+  .product ul {
+    flex-wrap: wrap;
+    gap: 100px 50px;
+  }
+  
+  .product-item {
+    width: 40%;
+  }
+
+  .product-content {
+    height: 50%;
+  }
+
+  .product-content p {
+    font-size: 10px;
+  }
+
+  .product-item a {
+    font-size: 9px;
+    padding: 10px;
+    bottom: -15px;
+  }
+
+  .product-item span.tree,
+  .product-item span.shrub {
+    font-size: 9px;
+  }
+
+  .testimonial-content {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .testimonial-item {
+    width: 80%;
+  }
+
+  .testimonial h1 {
+    font-size: 10px;
+    border-bottom: 2px solid var(--light-green);
+  }
+
+  .testimonial h2 {
+    font-size: 15px;
+  }
+
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-info {
+    margin: 10px;
+  }
+
+  .testimonial-name{
+    font-size: 11px;
+  }
+
+  .testimonial-job {
+    font-size: 10px;
+  }
+
+  .testimonial-item p {
+    font-size: 10px;
+    line-height: 14px;
+  }  
+
+  .article-list {
+    margin: 0;
+  }
+
+  .article-list ul {
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  .article-item a {
+    width: 85%;
+    height: 280px;
+  }
+  
+  .article-item h2 {
+    font-size: 10px;
+  }
+
+  .article-item p {
+    font-size: 9px;
+  } 
 }

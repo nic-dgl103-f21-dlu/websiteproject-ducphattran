@@ -2,10 +2,9 @@
   1. Global styles
   2. Header
   3. Nav
-  4. Header-auth
-  5. Main
-  6. Footer
-  7. Responsive
+  4. Main
+  5. Footer
+  6. Responsive
 */
 
 /* 
@@ -64,6 +63,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 nav ul {
@@ -95,50 +96,24 @@ nav ul {
   border-bottom: 5px solid var(--green);
 }
 
-.menu-label,
 .toggle {
   display: none;
-}
-
-/* 
- === HEADER AUTH ===
- */
-.header-auth ul {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-auth ul li {
-  margin-left: 10px;
-}
-
-.header-auth ul li a {
-  text-decoration: none;
-  display: inline-block;
-  background-color: var(--dark-green);
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: var(--nyanza);
-  border: 1px solid var(--dark-green);
-}
-
-.header-auth ul li a:hover {
-  background-color: var(--nyanza);
+  text-align: center;
+  padding: 10px;
   color: var(--dark-green);
-  border: 1px solid var(--dark-green);
-  transition: 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .cart-container {
-  margin: 0 10px 0 40px;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+}
+
+.header-auth ul li a:last-of-type {
+  margin-left: auto;
 }
 
 #cart {
@@ -152,6 +127,7 @@ nav ul {
 #cart:hover {
   background-color: var(--viridian-green);
   color: var(--extra-light-green);
+  border: none;
 }
 
 /* 
@@ -193,8 +169,10 @@ footer {
 
 .navigation ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation ul li {
@@ -219,7 +197,6 @@ footer {
 
 .contact ul li p:first-child {
   color: var(--nyanza);
-  margin: 0 20px 0 0;
   font-weight: bold;
   font-style: italic;
 }
@@ -230,6 +207,10 @@ footer {
 
 .contact ul li p i {
   margin-right: 5px;
+}
+
+.facebook-page iframe {
+  width: 100%;
 }
 
 .disclaimer {
@@ -256,10 +237,24 @@ footer {
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    justify-content: space-around;
+  }
+
+  .logo a img {
+    width: 120px;
+    height: 70px;
+  }
+
   .menu-link {
     padding: 10px;
     font-size: 14px;
+  }
+
+  #cart {
+    padding: 8px;
+    font-size: 13px;
   }
 
   .footer-content {
@@ -279,7 +274,7 @@ footer {
   }
 
   .facebook-page iframe {
-    width: 280px;
+    height: 260px;
   }
 
   .disclaimer {
@@ -288,7 +283,45 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  /* Responsive navigation */
+  nav {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .show-items {
+    display: block;
+    border-bottom: 1px solid var(--viridian-green);
+  }
+
+  .show-items li {
+    margin: 15px;
+  }
+
+  .show-items li .menu-link {
+    display: block;
+  }
+  /* End responsive navigation */
+
+  .logo a img {
+    width: 100px;
+    height: 65px;
+  }
+
   .cart-container {
     margin: 0;
   }
@@ -296,16 +329,12 @@ footer {
   .menu-link,
   .header-auth ul li a,
   #cart {
-    padding: 8px;
+    padding: 10px;
     font-size: 10px;
   }
 
-  .testimonial-content {
-    flex-wrap: wrap;
-  }
-
   .facebook-page iframe {
-    width: 200px;
+    height: 200px;
   }
 
   .footer-content {
@@ -319,12 +348,95 @@ footer {
     font-size: 13px;
   }
 
+  .contact ul li {
+    margin: 0;
+  }
+
   .navigation ul li a,
   .contact ul li p {
     font-size: 10px;
+    padding: 6px;
+    margin: 0;
   }
 
   .disclaimer {
     font-size: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  header {
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  .logo a img {
+    width: 80px;
+    height: 50px;
+  }
+
+  /* Responsive navigation */
+  nav {
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .show-items {
+    display: block;
+    border-bottom: 1px solid var(--viridian-green);
+  }
+
+  .show-items li {
+    margin: 15px;
+  }
+
+  .show-items li .menu-link {
+    display: block;
+  }
+  /* End responsive navigation */
+
+  .menu-link,
+  #cart {
+    padding: 8px;
+    font-size: 8px;
+  }
+
+  .facebook-page iframe {
+    height: 160px;
+  }
+
+  .footer-content {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .navigation h2,
+  .contact h2,
+  .facebook-page h2 {
+    font-size: 10px;
+  }
+
+  .contact ul li {
+    margin: 0;
+  }
+
+  .navigation ul li a,
+  .contact ul li p {
+    font-size: 8px;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .disclaimer {
+    font-size: 6px;
   }
 }

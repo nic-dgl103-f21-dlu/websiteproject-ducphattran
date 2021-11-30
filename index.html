@@ -29,43 +29,33 @@
           <img src="images/logo.png" alt="Outback Nursery's logo" />
         </a>
       </div>
-
-      <nav>
-        <ul>
-          <li class="menu-item">
-            <a class="menu-link active" href="index.html">Home</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="about-us.html">About Us</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="products.html">Products</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="articles.html">Articles</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="contact-us.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header-auth">
-        <ul>
-          <li>
-            <a href="#">Login</a>
-          </li>
-          <li>
-            <a href="#">Register</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="cart-container">
-        <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+          <a class="menu-link" id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </header>
+
+    <nav>
+      <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i> Menu</a>
+      <ul id="nav-items">
+        <li class="menu-item">
+          <a class="menu-link active" href="index.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="products.html">Products</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="articles.html">Articles</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="contact-us.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <!-- PROMOTION -->
@@ -207,7 +197,7 @@
       <!-- Testimonials -->
       <section class="testimonial">
         <h1>Testimonials</h1>
-        <p>What they say about us</p>
+        <h2>What they say about us</h2>
         <div class="testimonial-content">
           <div class="testimonial-item">
             <div class="testimonial-author">
@@ -327,7 +317,7 @@
             <li>
               <a href="contact-us.html">Contact Us</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Login</a>
             </li>
             <li>
@@ -335,7 +325,7 @@
             </li>
             <li>
               <a href="#">Forgot password</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="contact">
@@ -376,5 +366,12 @@
         were approved by the business owner.
       </p>
     </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items")
+        element.classList.toggle("show-items")
+      }
+    </script>
   </body>
 </html>
