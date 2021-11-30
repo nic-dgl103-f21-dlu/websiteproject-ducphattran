@@ -172,7 +172,7 @@ footer {
   flex-direction: column;
   gap: 5px;
   justify-content: center;
-  align-items: center;
+  padding-left: 10px;
 }
 
 .navigation ul li {
@@ -229,8 +229,7 @@ footer {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   header,
-  nav,
-  .promotion {
+  nav {
     width: 85%;
     margin: auto;
   }
