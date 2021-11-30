@@ -54,8 +54,6 @@
         <li class="menu-item">
           <a class="menu-link" href="contact-us.html">Contact Us</a>
         </li>
-        <li class="menu-item">
-        </li>
       </ul>
     </nav>
 
@@ -63,7 +61,8 @@
       <div class="products-container">
         <h1>Products</h1>
         <div class="products-content">
-          <aside>
+          <a class="filter-toggle" onclick="showFilter()"><i class="fas fa-filter"></i> Filter</a>
+          <aside id="filter-sidebar">
             <h2>Search</h2>
             <!-- Search form -->
             <form action="products.html" method="get">
@@ -238,15 +237,6 @@
             <li>
               <a href="contact-us.html">Contact Us</a>
             </li>
-            <!-- <li>
-              <a href="#">Login</a>
-            </li>
-            <li>
-              <a href="#">Signup</a>
-            </li>
-            <li>
-              <a href="#">Forgot password</a>
-            </li> -->
           </ul>
         </div>
         <div class="contact">
@@ -289,6 +279,11 @@
       function showNav() {
         var element = document.getElementById("nav-items")
         element.classList.toggle("show-items")
+      }
+
+      function showFilter() {
+        var element = document.getElementById("filter-sidebar")
+        element.classList.toggle("show-filter")
       }
     </script>
   </body>

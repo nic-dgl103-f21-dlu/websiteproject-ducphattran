@@ -304,6 +304,7 @@ footer {
 
   .show-items {
     display: block;
+    width: 100%;
     border-bottom: 1px solid var(--viridian-green);
   }
 
